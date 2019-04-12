@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script>
+    
+function toggleMenu()
+{
+    document.body.classList.toggle("open-menu");
+}
+
+</script>
+
+</head>
+
+<body>
+
+        <div class="content">
+ 
+                <input type="image" src="images/menu.svg" id="toggleMenu">
+                <h1> Click on the button Above to find out what lies on the left.</h1>
+                <p> I promise you will be in a big surprise!!!</p>
+        
+            </div>
+    
+    <div class="menu-canvas">
+   
+         <ul class="menu">
+            <li> <a href="#"> Home</a> </li>
+            <li> <a href="#"> About</a> </li>
+            <li> <a href="#"> Work</a> </li>
+            <li> <a href="#"> Contact</a> </li>
+
+         </ul>
+
+    </div>
+
+   <script>
+    const menuButton = document.querySelector("#toggleMenu");
+
+    menuButton.addEventListener("click",toggleMenu);
+   
+  </script>
+
+</body>
+
+</html>
